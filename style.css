@@ -1,0 +1,97 @@
+#map-legend {
+    position: absolute;
+    padding: 5px 20px;
+    background-color: rgba(43,43,43, 0.8);
+    border-radius: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+#map-items-legend {
+    padding-left: 20px;
+    height: 20px;
+    width: 450px;
+}
+
+#state_stats {
+    font-size: 4ex;
+    margin-bottom: 70px;
+}
+
+.dot-items {
+    stroke:black;
+    stroke-width:1px;
+}
+
+.dot-labels{
+    fill: black;
+    text-anchor: left;
+    text-align: left;
+}
+
+.states {
+    stroke: black;
+    stroke-width:0.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.states:hover, .smallerstates:hover, .states-list:hover {
+    stroke-width: 3px;
+    opacity: 0.5;
+  }
+
+.state-names, .states-list-names {
+    fill:white;
+    font-size: 8pt;
+    text-anchor: middle;
+    cursor: default;
+    text-shadow: 1px 1px black;
+}
+
+.smallerstates { 
+    stroke: black;
+    stroke-width:1px;
+    width: 50px;
+    height: 35px;
+}
+
+.line {
+    stroke: black;
+    stroke-width: 0.5px;
+}
+
+.states-list {
+    stroke: black;
+    stroke-width: 1px;
+    width: 150px;
+    height: 20px;
+    z-index: -1;
+}
+
+.states-list-names {
+    font-size: 10pt;
+}
+
+#container {
+    float: left;
+    margin-right: 50px;
+  }
+
+.tooltip {
+    opacity: 0;
+    line-height: 1;
+    padding: 12px;
+    background: rgba(43,43,43, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    font-size: 11pt;
+}
+
+
+
+

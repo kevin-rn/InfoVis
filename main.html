@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="map">
+            <div id="map-legend">
+                <select id="dropdown"></select>
+                <svg id="map-items-legend"></svg>
+                <button type="button" value="map" id="switchbutton">Switch Format</button>
+            </div>
+        </div>
+        <div id="graph"></div>
+    </div>
+    <!-- <div id="container"> -->
+        <div id="stats">
+            <h1 id="state_name"></div>
+            <table id = "state_stats">
+                <tr>
+                    <th>Population: </th>
+                    <td id = "population"></td>
+                </tr>
+                <tr>
+                    <th>Population Density: </th>
+                    <td id = "density"></td>
+                </tr>
+                <tr>
+                    <th>Population Change: </th>
+                    <td id = "change"></td>
+                </tr>
+                <tr>
+                    <th>Democrat Votes: </th>
+                    <td id ="democrat"></td>
+                </tr>
+                <tr>
+                    <th>Republican Votes: </th>
+                    <td id = "republican"></td>
+                </tr>
+                <tr>
+                    <th>Libertarian Votes: </th>
+                    <td id = "libertarian"></td>
+                </tr>
+                <tr>
+                    <th>Other Votes: </th>
+                    <td id = "other"></td>
+                </tr>
+                <tr>
+                    <th>Total Votes: </th>
+                    <td id = "total"></td>
+                </tr>
+            </table>
+        </div>
+        <div id = "yearlygraph"></div>
+    <!-- </div> -->
+</body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script src="main.js"></script>
+<script src="map.js"></script>
+<script src="graph.js"></script>
+<script src="stats.js"></script>
+<script src="yearlygraph.js"></script>
+<script src="selection.js"></script>
+</html>
